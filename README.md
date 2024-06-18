@@ -27,7 +27,7 @@ A pre-built jar file, built using JDK8, is also included [here](dnstest-1.0.0.ja
 ## Configuring the Utility
 The utility takes four arguments:
 
-1) Either a single hostname or a comma-delimited list of hostnames the utiolity will cycle through.
+1) Either a single hostname or a comma-delimited list of hostnames the utility will cycle through.
 2) The number of threads to spawn
 3) The millis to sleep between subsequent calls within each thread
 4) quietMode - set this to <code>true</code> or <code>false</code>.  (See below for an explanation)
@@ -124,7 +124,7 @@ $ cat /tmp/dns-test.log
 
 You can periodically check that file to see if any <code>unknownHostExceptions</code> are caught.
 
-Stop the test by killing the process.  You can find the process' PID like this:
+Stop the test by killing the process.  You can find the process's PID like this:
 
 ```
 $ ps -ef | grep dnstest
