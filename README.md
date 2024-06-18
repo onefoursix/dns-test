@@ -1,7 +1,7 @@
 # dns-test
 
 This project is a tiny utility that can be used to stress-test DNS lookups from a Java-based app.
-It takes one or more hostnames, and will lookup the IPs using a user-defined number of concurrent threads, with a user-defined sleep interval between calls in any given thread.
+It takes one or more hostnames, and will lookup the IPs using a user-defined number of concurrent threads, with a user-defined sleep interval between calls in any given thread. If any <code>unknownHostExceptions</code> are thrown, they will be captured in the utility's log
 
 ## Building the Utility
 
