@@ -62,6 +62,7 @@ public class DnsTestRunnable implements Runnable {
 					printMessage(e.toString());
 					System.out.println(e.getStackTrace());
 				} finally {
+					
 				    try {
 						Thread.sleep(sleepMillis);
 					} catch (InterruptedException e) {
