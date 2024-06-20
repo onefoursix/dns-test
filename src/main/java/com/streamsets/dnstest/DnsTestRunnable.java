@@ -56,17 +56,18 @@ public class DnsTestRunnable implements Runnable {
 						}
 					}
 
-					try {
+				} catch (UnknownHostException e) {
+
+					printMessage(e.getMessage());
+					printMessage(e.toString());
+					System.out.println(e.getStackTrace());
+				} finally {
+				    try {
 						Thread.sleep(sleepMillis);
 					} catch (InterruptedException e) {
 						// ignore any exceptions caught here
 					}
-				} catch (UnknownHostException e) {
-
-					printMessage(e.getMessage());
-					System.out.println(e.getStackTrace());
 				}
-
 			}
 		}
 	}
