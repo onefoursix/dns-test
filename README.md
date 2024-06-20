@@ -124,7 +124,7 @@ $ cat /tmp/dns-test.log
 
 You can periodically check that file to see if any <code>unknownHostExceptions</code> are caught.
 
-Stop the test by killing the process.  You can find the process's PID like this:
+Stop the run by killing the process.  You can find the process's PID like this:
 
 ```
 $ ps -ef | grep dnstest
